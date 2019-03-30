@@ -46,7 +46,7 @@ module Ruboty
         end
 
         def latest_deploy
-          'release/main'
+          ENV['LATEST_DEPLOY'] || 'release/main'
         end
 
         def repo
